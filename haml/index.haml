@@ -22,3 +22,27 @@
   %link{:href => "css/style.css", :rel => "stylesheet", :type => "text/css"}/
   %script{:src => "js/jquery-2.1.0.min.js"}
 %body
+  #container.clearfix
+    #side-bar
+      #side-main-image
+        %a{href: '.'}<
+          %img{src: "img/side-main-image.png", alt: "東京大学制作展"}
+      #links.clearfix
+        .link
+          %a{href: './'}<
+            %p 開催概要
+        .link
+          %a{href: './'}<
+            %p ご挨拶
+        .link
+          %a{href: './'}<
+            %p 作品紹介
+        .link
+          %a{href: './'}<
+            %p スタッフ
+        .link
+          %a{href: './'}<
+            %p リンク
+    #main
+      #main-index
+
