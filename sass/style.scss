@@ -1,0 +1,25 @@
+html, body {
+  height: 100%;
+}
+
+#container {
+  height: 100%;
+}
+
+#nav {
+  position: fixed;
+  width: 180px;
+  height: 100%;
+  border: 1px solid #aaa;
+}
+
+#main {
+  position: relative;
+  width : -webkit-calc(100% - 180px) ;
+  width : calc(100% - 180px);
+  height: 100%;
+  left: 180px;
+}
+
+#main-index {
+}
