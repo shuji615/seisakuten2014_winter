@@ -57,9 +57,10 @@ htmlは`<div id="main">`の直下に、そのページのファイル名を冠�
 | index.html | 李 |
 | info.html | 長徳 |
 | greetings.html | 長徳 |
+| works.html | 川瀬 |
 | gallery.html | 川瀬 |
 | staff.html | 都甲 |
-| links.html | 川瀬 |
+| links.html | 都甲 |
 
 htmlのコーディングはみんなにお願いして、
 cssの適用はデザインの村上がやってしまおうかなと考えています。
@@ -77,10 +78,13 @@ cssの適用はデザインの村上がやってしまおうかなと考えて�
 ### greetings.html
 講師陣とプロデューサの挨拶
 
-### gallery.html
-制作物一覧と、制作風景。
+### works.html
+制作物一覧。
 制作物の写真にはリンクを張って、```./works/```配下に制作物の詳細のページをおきます。
 今回はfancybox使わないでいきます。
+
+### gallery.html
+制作風景の写真集。今回は制作物とページを分けることにします。
 
 ### staff.html
 スタッフ紹介
