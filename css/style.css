@@ -71,5 +71,14 @@ a:hover {
   width: calc(100% - 180px);
   height: 100%;
   left: 180px; }
+  #main .title {
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    float: left;
+    padding: 10px;
+    border-bottom: solid 3px; }
+    #main .title p {
+      font-size: 40px; }
 
 /*# sourceMappingURL=style.css.map */

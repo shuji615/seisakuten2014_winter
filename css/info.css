@@ -15,12 +15,8 @@ p {
 #info {
   background-color: rgba(0, 0, 0, 0.5); }
   #info .title {
-    margin-top: 40px;
-    margin-left: 40px;
-    margin-bottom: 40px;
-    float: left;
-    padding: 10px;
-    border-bottom: solid 4px #ecf0f1; }
+    border-bottom: solid 3px;
+    border-bottom-color: #ecf0f1; }
     #info .title p {
       font-size: 60px; }
   #info .time {
