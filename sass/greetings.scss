@@ -1,0 +1,55 @@
+p {
+  color: #ecf0f1;
+}
+
+#greetings {
+  background-color: rgba(0, 0, 0, 0.5);
+
+  .container {
+    clear: left;
+    min-width: 600px;
+  }
+
+  .img-container {
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 40px;
+  }
+
+  .title {
+    border-bottom-color: #ecf0f1;
+  }
+
+  .about {
+    padding-top: 30px;
+    float: left;
+    p {
+      margin-left: 30px;
+    }
+    p.name {
+      margin-bottom: 8px;
+      font-size: 24px;
+    }
+    p.prop {
+      margin-bottom: 8px
+    }
+  }
+
+  .greeting {
+    clear: left;
+    margin-left: 20px;
+    margin-bottom: 60px;
+    p {
+      line-height: 22px;
+    }
+  }
+
+
+  .img-container {
+    img {
+      border-radius: 125px;
+      width: 250px;
+      height: auto;
+    }
+  }
+}
