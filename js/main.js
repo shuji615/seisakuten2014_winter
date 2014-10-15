@@ -7,14 +7,14 @@ $(function(){
 
   // 最初のアニメーション
   $('#main').animate({
-    marginLeft: '0'
+    opacity: 1.0
   }, 500, 'easeOutExpo');
 
   // クリックされたらアニメーション
   $('#nav .link a').click(function(e){
     e.preventDefault();
     $('#main').animate({
-      marginLeft: '-100%'
+      opacity: 0.0
     }, 500, 'easeOutExpo', function(){
       window.location.href = e.target.parentNode.href;
     });
