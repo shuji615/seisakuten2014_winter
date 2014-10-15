@@ -69,7 +69,6 @@ a:hover {
   position: relative;
   width: -webkit-calc(100% - 180px);
   width: calc(100% - 180px);
-  height: 100%;
   left: 180px; }
   #main .title {
     margin-top: 40px;
