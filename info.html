@@ -30,6 +30,9 @@
     <!--[if IE]> <script type="text/javascript" src="excanvas.js"></script> <![endif]-->
     <link href='css/style.css' rel='stylesheet' type='text/css'>
     <link href='css/info.css' rel='stylesheet' type='text/css'>
+    <link href='css/gmaps.css' rel='stylesheet' type='text/css' />
+    <script type="text/javascript" src="js/googlemapapi.js"></script>
+    <script type="text/javascript" src="js/gmaps.js"></script>
   </head>
   <body>
     <div class='clearfix' id='container'>
@@ -71,7 +74,7 @@
           <div class='place'>
             <p>東京大学本郷キャンパス工学部2号館</p>
           </div>
-          <div class='map'></div>
+          <div class='map' id="map"></div>
         </div>
       </div>
       <div id='footer'></div>
@@ -81,4 +84,19 @@
       <script src='js/bootstrap.min.js'></script>
     </div>
   </body>
+  <script type="text/javascript">
+    var map;
+    $(document).ready(function(){
+      map = new GMaps({
+        div: '#map',
+        lat: 35.714296,
+        lng: 139.7618545
+      });
+      map.addMarker({
+        lat: 35.714296,
+        lng: 139.7618545,
+        title: '東京大学本郷キャンパス工学部2号館',
+      });
+    });
+  </script>
 </html>
