@@ -67,6 +67,11 @@ ul {
     width: 108px;
     height: 25px;
     border-bottom: solid 2px;
+    a {
+      // display: block;
+      width: 100%;
+      height: 100%;
+    }
     p {
       color: black;
       margin-left: 4px;
@@ -97,6 +102,11 @@ ul {
       font-size: 40px;
     }
   }
+}
+
+// for animation
+#main {
+  opacity: 0.0;
 }
 
 #main-index {
