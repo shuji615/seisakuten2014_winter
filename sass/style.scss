@@ -34,6 +34,10 @@ a:hover {
   opacity: 50%;
 }
 
+ul {
+  list-style: none;
+}
+
 #container {
   height: 100%;
 }
@@ -43,7 +47,7 @@ a:hover {
   z-index: 1;
   width: 180px;
   height: 100%;
-  border-right: 1px solid #aaa;
+  border-right: 1px solid #95a5a6;
   background-color: white;
   #nav-top-image {
     margin-top: 20px;

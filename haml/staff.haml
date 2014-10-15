@@ -28,6 +28,7 @@
     / %link{:href => "css/style.css", :media => "screen and (min-device-width:481px)", :rel => "stylesheet", :type => "text/css"}/
     /[if IE] <script type="text/javascript" src="excanvas.js"></script>
     %link{:href => "css/style.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "css/staff.css", :rel => "stylesheet", :type => "text/css"}/
   %body
     #container.clearfix
       #nav
@@ -54,7 +55,88 @@
             %a{href: './links.html'}<
               %p リンク
       #main
-        #main-index
+        #staff
+          .title
+            %p スタッフ
+          %ul#staff-list
+            %li
+              .subtitle
+                %p プロデューサー
+              %ul.clearfix
+                %li
+                  %p 北原　俊
+                %li
+                  %p 平木　剛史
+            %li
+              .subtitle
+                %p 会計
+              %ul.clearfix
+                %li
+                  %p 山本　紘暉
+            %li
+              .subtitle
+                %p Web・記録
+              %ul.clearfix
+                %li
+                  %p 長徳　将希
+                %li
+                  %p 都甲　直之
+                %li
+                  %p 川瀬　佑司
+                %li
+                  %p 李 遂喆
+            %li
+              .subtitle
+                %p デザイン
+              %ul.clearfix
+                %li
+                  %p 中村　鮎葉
+                %li
+                  %p 高橋　一成
+                %li
+                  %p 宇田川　祐志
+                %li
+                  %p 栗本　拓紀
+                %li
+                  %p 村上晋太郎
+            %li
+              .subtitle
+                %p 会場
+              %ul.clearfix
+                %li
+                  %p 藤縄　英佑
+                %li
+                  %p 宇治土公　雄介
+                %li
+                  %p 荒巻　祐治
+                %li
+                  %p 田中　遼平
+            %li
+              .subtitle
+                %p 広報
+              %ul.clearfix
+                %li
+                  %p 加賀谷　北斗
+                %li
+                  %p 向井　寛人
+                %li
+                  %p 藤本　浩介
+                %li
+                  %p 有田　祥馬
+            %li
+              .subtitle
+                %p 担当教員
+              %ul.clearfix
+                %li
+                  %p 苗村　健
+                %li
+                  %p 荒川　忠一
+                %li
+                  %p 水越　伸
+                %li
+                  %p 小松　宏誠
+                %li
+                  %p 赤川　智洋
       #footer
       / jQuery (necessary for Bootstrap's JavaScript plugins)
       %script{:src => "js/jquery-2.1.0.min.js"}
