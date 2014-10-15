@@ -1,3 +1,21 @@
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.clearfix {
+  display: inline-table; }
+
+/* Hides from IE-mac \*/
+* html .clearfix {
+  height: 1%; }
+
+.clearfix {
+  display: block; }
+
+/* End hide from IE-mac */
 html, body {
   height: 100%; }
 
@@ -10,9 +28,11 @@ a:hover {
 
 #nav {
   position: fixed;
+  z-index: 1;
   width: 180px;
   height: 100%;
-  border-right: 1px solid #aaa; }
+  border-right: 1px solid #aaa;
+  background-color: white; }
   #nav #nav-top-image {
     margin-top: 20px;
     margin-left: 29px; }
