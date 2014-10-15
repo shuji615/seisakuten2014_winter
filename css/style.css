@@ -1,0 +1,55 @@
+html, body {
+  height: 100%; }
+
+a:hover {
+  text-decoration: none;
+  opacity: 50%; }
+
+#container {
+  height: 100%; }
+
+#nav {
+  position: fixed;
+  width: 180px;
+  height: 100%;
+  border-right: 1px solid #aaa; }
+  #nav #nav-top-image {
+    margin-top: 20px;
+    margin-left: 29px; }
+    #nav #nav-top-image img {
+      width: 120px;
+      height: auto; }
+  #nav #links {
+    width: 100%;
+    margin-top: 100px; }
+  #nav .link {
+    margin-left: 36px;
+    margin-bottom: 10px;
+    width: 108px;
+    height: 25px;
+    border-bottom: solid 2px; }
+    #nav .link p {
+      color: black;
+      margin-left: 4px;
+      font-size: 14px; }
+  #nav .info {
+    border-bottom-color: #3498db; }
+  #nav .greetings {
+    border-bottom-color: #9b59b6; }
+  #nav .works {
+    border-bottom-color: #f1c40f; }
+  #nav .gallery {
+    border-bottom-color: #e74c3c; }
+  #nav .staff {
+    border-bottom-color: #27ae60; }
+  #nav .links {
+    border-bottom-color: #2980b9; }
+
+#main {
+  position: relative;
+  width: -webkit-calc(100% - 180px);
+  width: calc(100% - 180px);
+  height: 100%;
+  left: 180px; }
+
+/*# sourceMappingURL=style.css.map */
