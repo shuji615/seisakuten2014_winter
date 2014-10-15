@@ -1,6 +1,7 @@
 $(function(){
   $('#nav .link a').click(function(e){
     e.preventDefault();
-    console.log(this.attr('href'));
+    window.location.href = e.target.parentNode.href;
   });
 });
+
