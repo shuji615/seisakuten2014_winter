@@ -1,0 +1,44 @@
+p {
+  color: #ecf0f1; }
+
+#greetings-background {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/greetings-background.png);
+  background-size: cover; }
+
+#greetings {
+  background-color: rgba(0, 0, 0, 0.5); }
+  #greetings .container {
+    clear: left;
+    min-width: 600px; }
+  #greetings .img-container {
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 40px; }
+  #greetings .title {
+    border-bottom-color: #ecf0f1; }
+  #greetings .about {
+    padding-top: 30px;
+    float: left; }
+    #greetings .about p {
+      margin-left: 30px; }
+    #greetings .about p.name {
+      margin-bottom: 8px;
+      font-size: 24px; }
+    #greetings .about p.prop {
+      margin-bottom: 8px; }
+  #greetings .greeting {
+    clear: left;
+    margin-left: 20px;
+    margin-bottom: 60px; }
+    #greetings .greeting p {
+      line-height: 22px; }
+  #greetings .img-container img {
+    border-radius: 125px;
+    width: 250px;
+    height: auto; }
+
+/*# sourceMappingURL=greetings.css.map */
