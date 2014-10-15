@@ -6,9 +6,6 @@ $(function(){
   });
 
   // 最初のアニメーション
-  $('#main').css({
-    marginLeft: '-100%'
-  });
   $('#main').animate({
     marginLeft: '0'
   }, 500, 'easeOutExpo');

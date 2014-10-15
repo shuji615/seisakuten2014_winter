@@ -86,4 +86,7 @@ ul {
     #main .title p {
       font-size: 40px; }
 
+#main {
+  margin-left: -100%; }
+
 /*# sourceMappingURL=style.css.map */
