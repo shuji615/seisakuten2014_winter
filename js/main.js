@@ -5,6 +5,16 @@ $(function(){
     }
   });
 
+  // sticky navigation
+  var $nav = $('#nav');
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 30) {
+      $nav.addClass('sticky');
+    } else {
+      $nav.removeClass('sticky');
+    }
+  });
+
   // 最初のアニメーション
   $('#main').removeClass('goast');
 

@@ -1,9 +1,9 @@
 .constraint {
   margin: 0 auto;
-  @media all and (max-width: 719px) {
+  @media all and (max-width: 540px) {
     max-width: 270px;
   }
-  @media all and (min-width: 720px) and (max-width: 989px) {
+  @media all and (min-width: 540px) and (max-width: 989px) {
     width: 540px;
   }
   @media all and (min-width: 990px) {
