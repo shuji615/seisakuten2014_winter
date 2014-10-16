@@ -89,8 +89,8 @@ ul {
         height: auto; }
     #nav #links {
       float: right;
-      width: 240px;
-      margin-top: 0px; }
+      width: 480px;
+      margin-top: 18px; }
     #nav .link {
       float: left;
       margin-left: 10px;
@@ -149,6 +149,10 @@ ul {
         color: black;
         text-align: center;
         font-size: 8px; } }
+@media all and (max-width: 559px) {
+  #nav #links {
+    width: 240px;
+    margin-top: 0px; } }
 #main {
   position: relative;
   width: -webkit-calc(100% - 180px);

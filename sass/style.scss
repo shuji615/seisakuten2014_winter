@@ -110,8 +110,8 @@ ul {
     }
     #links {
       float: right;
-      width: 240px;
-      margin-top: 0px
+      width: 480px;
+      margin-top: 18px
     }
     .link {
       float: left;
@@ -177,6 +177,13 @@ ul {
         font-size: 8px;
       }
     }
+  }
+}
+
+@media all and (max-width: 559px) { // smart
+  #nav #links {
+    width: 240px;
+    margin-top: 0px
   }
 }
 
