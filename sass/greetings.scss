@@ -16,7 +16,6 @@ p {
 
   .constraint {
     clear: left;
-    min-width: 600px;
   }
 
   .img-container {
@@ -40,7 +39,8 @@ p {
       font-size: 24px;
     }
     p.prop {
-      margin-bottom: 8px
+      margin-bottom: 14px;
+      font-size: 12px;
     }
   }
 
@@ -56,8 +56,61 @@ p {
   .img-container {
     img {
       border-radius: 125px;
-      width: 250px;
+      width: 200px;
       height: auto;
     }
   }
+}
+
+@media all and (max-width: 559px) { // smart
+#greetings {
+  .constraint {
+    clear: left;
+  }
+
+  .img-container {
+    float: none;
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  .title {
+    border-bottom-color: #ecf0f1;
+  }
+
+  .about {
+    width: 100%;
+    margin-bottom: 60px;
+    p {
+      text-align: center;
+      margin-left: 0px;
+    }
+    p.name {
+      margin-bottom: 8px;
+      font-size: 24px;
+    }
+    p.prop {
+      margin-bottom: 14px;
+      font-size: 12px;
+    }
+  }
+
+  .greeting {
+    clear: left;
+    margin: 0 30px 60px;
+    p {
+      line-height: 22px;
+    }
+  }
+
+
+  .img-container {
+    img {
+      border-radius: 125px;
+      width: 200px;
+      height: auto;
+    }
+  }
+}
+
 }
