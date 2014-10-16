@@ -14,10 +14,16 @@ p {
 #info {
   background-color: rgba(255, 255, 255, 0.6);
   .title {
+    width: 280px;
     border-bottom: solid 3px;
     border-bottom-color: black;
     p {
       font-size: 60px;
+    }
+    @media all and (max-width: 719px) { // smart
+      p {
+        font-size: 36px;
+      }
     }
   }
 
@@ -32,8 +38,7 @@ p {
   }
 
   .place {
-    margin-left: 60px;
-    margin-bottom: 60px;
+    margin: 60px 60px;
     p {
       margin-bottom: 10px;
       font-size: 20px;
@@ -48,5 +53,10 @@ p {
     margin-bottom: 50px;
     width: 500px;
     height: 500px;
+    @media all and (max-width: 520px) { // smart
+      width: 300px;
+      height: 300px;
+      margin-left: -150px;
+    }
   }
 }

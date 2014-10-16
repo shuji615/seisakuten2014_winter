@@ -12,8 +12,7 @@ p {
 #greetings {
   background-color: rgba(0, 0, 0, 0.5); }
   #greetings .constraint {
-    clear: left;
-    min-width: 600px; }
+    clear: left; }
   #greetings .img-container {
     float: left;
     margin-left: 20px;
@@ -29,7 +28,8 @@ p {
       margin-bottom: 8px;
       font-size: 24px; }
     #greetings .about p.prop {
-      margin-bottom: 8px; }
+      margin-bottom: 14px;
+      font-size: 12px; }
   #greetings .greeting {
     clear: left;
     margin: 0 30px 60px; }
@@ -37,7 +37,38 @@ p {
       line-height: 22px; }
   #greetings .img-container img {
     border-radius: 125px;
-    width: 250px;
+    width: 200px;
     height: auto; }
+
+@media all and (max-width: 559px) {
+  #greetings .constraint {
+    clear: left; }
+  #greetings .img-container {
+    float: none;
+    width: 200px;
+    margin: 0 auto; }
+  #greetings .title {
+    border-bottom-color: #ecf0f1; }
+  #greetings .about {
+    width: 100%;
+    margin-bottom: 60px; }
+    #greetings .about p {
+      text-align: center;
+      margin-left: 0px; }
+    #greetings .about p.name {
+      margin-bottom: 8px;
+      font-size: 24px; }
+    #greetings .about p.prop {
+      margin-bottom: 14px;
+      font-size: 12px; }
+  #greetings .greeting {
+    clear: left;
+    margin: 0 30px 60px; }
+    #greetings .greeting p {
+      line-height: 22px; }
+  #greetings .img-container img {
+    border-radius: 125px;
+    width: 200px;
+    height: auto; } }
 
 /*# sourceMappingURL=greetings.css.map */
