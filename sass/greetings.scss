@@ -14,7 +14,7 @@ p {
 #greetings {
   background-color: rgba(0, 0, 0, 0.5);
 
-  .container {
+  .constraint {
     clear: left;
     min-width: 600px;
   }
@@ -46,8 +46,7 @@ p {
 
   .greeting {
     clear: left;
-    margin-left: 20px;
-    margin-bottom: 60px;
+    margin: 0 30px 60px;
     p {
       line-height: 22px;
     }
