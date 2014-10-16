@@ -1,0 +1,42 @@
+.constraint {
+  margin: 0 auto; }
+  @media all and (max-width: 719px) {
+    .constraint {
+      max-width: 270px; } }
+  @media all and (min-width: 720px) and (max-width: 989px) {
+    .constraint {
+      width: 540px; } }
+  @media all and (min-width: 990px) {
+    .constraint {
+      width: 810px; } }
+
+#main-links {
+  background-color: rgba(0, 0, 0, 0.2); }
+  #main-links ul {
+    clear: left; }
+    #main-links ul li {
+      float: left;
+      width: 270px;
+      margin-bottom: 40px; }
+  #main-links .link {
+    margin: 0 auto;
+    width: 240px; }
+    #main-links .link .img-clip {
+      width: 240px;
+      height: 180px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      overflow: hidden; }
+      #main-links .link .img-clip img {
+        width: auto;
+        height: 180px; }
+    #main-links .link .title {
+      width: 240px;
+      margin: 0 auto;
+      border: none; }
+      #main-links .link .title p {
+        text-align: center;
+        color: black;
+        font-size: 20px; }
+
+/*# sourceMappingURL=links.css.map */
