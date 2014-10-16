@@ -10,8 +10,26 @@
     width: 810px;
   }
 }
+
+#gallery-background {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/gallery-background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 #gallery {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.5);
+  .title {
+    border-bottom: solid 3px;
+    border-bottom-color: black;
+    p {
+      color: black;
+    }
+  }
   ul {
     clear: left;
     li {
