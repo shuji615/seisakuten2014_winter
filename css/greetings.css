@@ -11,7 +11,7 @@ p {
 
 #greetings {
   background-color: rgba(0, 0, 0, 0.5); }
-  #greetings .container {
+  #greetings .constraint {
     clear: left;
     min-width: 600px; }
   #greetings .img-container {
@@ -32,8 +32,7 @@ p {
       margin-bottom: 8px; }
   #greetings .greeting {
     clear: left;
-    margin-left: 20px;
-    margin-bottom: 60px; }
+    margin: 0 30px 60px; }
     #greetings .greeting p {
       line-height: 22px; }
   #greetings .img-container img {
