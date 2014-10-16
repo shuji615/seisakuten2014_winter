@@ -2,7 +2,7 @@
 
 $red: #e74c3c;
 $green: #27ae60;
-$blue: #2980b9;
+$orange: #e67e22;
 $cyan: #3498db;
 $magenta: #9b59b6;
 $yellow: #f1c40f;
@@ -79,12 +79,12 @@ ul {
     }
   }
 
-  .info { border-bottom-color: $cyan; }
-  .greetings { border-bottom-color: $magenta; }
-  .works { border-bottom-color: $yellow; }
-  .gallery { border-bottom-color: $red; }
-  .staff { border-bottom-color: $green; }
-  .links { border-bottom-color: $blue; }
+  .info {border-bottom-color: $red; }
+  .greetings {border-bottom-color: $cyan; }
+  .works {border-bottom-color: $yellow; }
+  .gallery {border-bottom-color: $green; }
+  .staff {border-bottom-color: $orange; }
+  .links {border-bottom-color: $magenta; }
 }
 
 #main {

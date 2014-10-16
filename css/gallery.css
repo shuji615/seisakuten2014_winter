@@ -1,0 +1,31 @@
+.constraint {
+  margin: 0 auto; }
+  @media all and (max-width: 719px) {
+    .constraint {
+      max-width: 270px; } }
+  @media all and (min-width: 720px) and (max-width: 989px) {
+    .constraint {
+      width: 540px; } }
+  @media all and (min-width: 990px) {
+    .constraint {
+      width: 810px; } }
+
+#gallery {
+  background-color: rgba(0, 0, 0, 0.2); }
+  #gallery ul {
+    clear: left; }
+    #gallery ul li {
+      float: left;
+      width: 270px;
+      margin-bottom: 20px; }
+  #gallery .img-clip {
+    width: 240px;
+    height: 180px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    overflow: hidden; }
+    #gallery .img-clip img {
+      width: auto;
+      height: 180px; }
+
+/*# sourceMappingURL=gallery.css.map */

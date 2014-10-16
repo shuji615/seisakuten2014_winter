@@ -59,17 +59,17 @@ ul {
       margin-left: 4px;
       font-size: 14px; }
   #nav .info {
-    border-bottom-color: #3498db; }
+    border-bottom-color: #e74c3c; }
   #nav .greetings {
-    border-bottom-color: #9b59b6; }
+    border-bottom-color: #3498db; }
   #nav .works {
     border-bottom-color: #f1c40f; }
   #nav .gallery {
-    border-bottom-color: #e74c3c; }
-  #nav .staff {
     border-bottom-color: #27ae60; }
+  #nav .staff {
+    border-bottom-color: #e67e22; }
   #nav .links {
-    border-bottom-color: #2980b9; }
+    border-bottom-color: #9b59b6; }
 
 #main {
   position: relative;
