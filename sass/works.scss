@@ -16,12 +16,19 @@
   z-index: -1;
   width: 100%;
   height: 100%;
-  background-image: url(../img/greetings-background.png);
-  background-size: cover;
+  background-image: url(../img/works-background.jpg);
+  background-size: contain;
 }
 
 #works {
-  background-color: rgba(255, 255, 255, 0.8);
+  .title {
+    border-bottom-color: #ecf0f1;
+    p {
+      color: #ecf0f1;
+    }
+  }
+
+  background-color: rgba(0, 0, 0, 0.5);
   ul#work-list {
     clear: left;
     li {
@@ -49,7 +56,7 @@
       p {
         font-size: 24px;
         text-align: center;
-        color: black;
+        color: #ecf0f1;
       }
     }
   }

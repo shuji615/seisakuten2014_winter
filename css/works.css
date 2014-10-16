@@ -15,11 +15,15 @@
   z-index: -1;
   width: 100%;
   height: 100%;
-  background-image: url(../img/greetings-background.png);
-  background-size: cover; }
+  background-image: url(../img/works-background.jpg);
+  background-size: contain; }
 
 #works {
-  background-color: rgba(255, 255, 255, 0.8); }
+  background-color: rgba(0, 0, 0, 0.5); }
+  #works .title {
+    border-bottom-color: #ecf0f1; }
+    #works .title p {
+      color: #ecf0f1; }
   #works ul#work-list {
     clear: left; }
     #works ul#work-list li {
@@ -41,6 +45,6 @@
     #works .work .work-title p {
       font-size: 24px;
       text-align: center;
-      color: black; }
+      color: #ecf0f1; }
 
 /*# sourceMappingURL=works.css.map */

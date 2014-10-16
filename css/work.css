@@ -11,7 +11,11 @@
 
 #work {
   min-height: 800px;
-  background-color: rgba(255, 255, 255, 0.8); }
+  background-color: rgba(0, 0, 0, 0.5); }
+  #work .title {
+    border-bottom-color: #ecf0f1; }
+    #work .title p {
+      color: #ecf0f1; }
   #work #description {
     clear: left; }
     #work #description img {
@@ -29,15 +33,18 @@
       #work #description .author .name {
         margin-bottom: 30px; }
         #work #description .author .name p {
+          color: #ecf0f1;
           font-size: 28px;
           line-height: 34px; }
       #work #description .author .affiliation p {
+        color: #ecf0f1;
         font-size: 20px;
         line-height: 24px; }
     #work #description .note {
       clear: left;
       margin: 30px; }
       #work #description .note p {
+        color: #ecf0f1;
         font-size: 16px;
         line-height: 20px; }
 
