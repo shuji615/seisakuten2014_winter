@@ -78,6 +78,7 @@ ul {
       font-size: 14px;
     }
   }
+
   .info { border-bottom-color: $cyan; }
   .greetings { border-bottom-color: $magenta; }
   .works { border-bottom-color: $yellow; }
@@ -106,6 +107,11 @@ ul {
 
 // for animation
 #main {
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+
+#main.goast {
   opacity: 0.0;
 }
 

@@ -6,18 +6,15 @@ $(function(){
   });
 
   // 最初のアニメーション
-  $('#main').animate({
-    opacity: 1.0
-  }, 500, 'easeOutExpo');
+  $('#main').removeClass('goast');
 
   // クリックされたらアニメーション
   $('#nav .link a').click(function(e){
     e.preventDefault();
-    $('#main').animate({
-      opacity: 0.0
-    }, 500, 'easeOutExpo', function(){
+    $('#main').addClass('goast');
+    setTimeout(function(){
       window.location.href = e.target.parentNode.href;
-    });
+    }, 800);
   });
 });
 
