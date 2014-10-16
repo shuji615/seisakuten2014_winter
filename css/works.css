@@ -1,8 +1,17 @@
+.constraint {
+  margin: 0 auto; }
+  @media all and (min-width: 720px) and (max-width: 989px) {
+    .constraint {
+      width: 540px; } }
+  @media all and (min-width: 990px) {
+    .constraint {
+      width: 810px; } }
+
 #works ul#work-list {
   clear: left; }
   #works ul#work-list li {
     float: left;
-    width: 280px;
+    width: 270px;
     margin-bottom: 40px; }
 #works .work {
   width: 200px;
