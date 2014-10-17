@@ -31,17 +31,17 @@
       width: 270px;
       margin-bottom: 40px; }
   #works .work {
-    width: 200px;
-    margin-left: 40px; }
+    width: 160px;
+    margin: 0 auto; }
     #works .work .img-clip {
-      width: 200px;
-      height: 200px;
+      width: 160px;
+      height: 160px;
       margin-bottom: 16px;
       overflow: hidden;
       border-radius: 100px; }
       #works .work .img-clip img {
         width: auto;
-        height: 200px; }
+        height: 160px; }
     #works .work .work-title p {
       font-size: 24px;
       text-align: center;
