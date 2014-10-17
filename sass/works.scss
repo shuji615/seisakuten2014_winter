@@ -1,7 +1,7 @@
 .constraint {
   margin: 0 auto;
   @media all and (max-width: 540px) {
-    max-width: 270px;
+    width: 80%;
   }
   @media all and (min-width: 540px) and (max-width: 989px) {
     width: 540px;
@@ -34,7 +34,7 @@
     li {
       float: left;
       width: 270px;
-      margin-bottom: 40px;
+      margin-bottom: 80px;
     }
   }
 
@@ -60,4 +60,36 @@
       }
     }
   }
+@media all and (max-width: 539px) { // smart
+  ul#work-list {
+    clear: left;
+    li {
+      float: left;
+      width: 50%;
+      margin-bottom: 60px;
+    }
+  }
+  .work {
+    width: 100px;
+    margin: 0 auto;
+    .img-clip {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 16px;
+      overflow: hidden;
+      border-radius: 100px;
+      img {
+        width: auto;
+        height: 100px;
+      }
+    }
+    .work-title {
+      p {
+        font-size: 20px;
+        text-align: center;
+        color: #ecf0f1;
+      }
+    }
+  }
+}
 }
