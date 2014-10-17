@@ -16,16 +16,16 @@ $(function(){
   });
 
   // 最初のアニメーション
-  $('#main').removeClass('goast');
+  // $('#main').removeClass('goast');
 
-  // クリックされたらアニメーション
-  $('#nav .link a').click(function(e){
-    e.preventDefault();
-    $('#main').addClass('goast');
-    setTimeout(function(){
-      window.location.href = e.target.parentNode.href;
-    }, 800);
-  });
+  // // クリックされたらアニメーション
+  // $('#nav .link a').click(function(e){
+  //   e.preventDefault();
+  //   $('#main').addClass('goast');
+  //   setTimeout(function(){
+  //     window.location.href = e.target.parentNode.href;
+  //   }, 800);
+  // });
 });
 
 
