@@ -122,9 +122,6 @@ ul {
   #nav {
     transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out; }
-    #nav .link {
-      transition: all .4s ease-in-out;
-      -webkit-transition: all .4s ease-in-out; }
 
   #nav.sticky {
     background-color: rgba(255, 255, 255, 0.8);
