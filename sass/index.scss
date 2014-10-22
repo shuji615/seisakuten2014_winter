@@ -1,4 +1,27 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
 #main {
   height: 100%;
 }
 
+#top {
+  width: 500px;
+  height: 500px;
+  background-color: gray;
+  margin: 0 auto;
+  .sprite {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    // for animation
+    transition: background-image .4s ease-in-out;
+    -webkit-transition: background-image .4s ease-in-out;
+  }
+  .sprite.bigmark-c { background-image: url(../img/bigmark-c.png); }
+  .sprite.bigmark-m { background-image: url(../img/bigmark-m.png); }
+  .sprite.bigmark-y { background-image: url(../img/bigmark-y.png); }
+}
