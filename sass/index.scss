@@ -14,14 +14,16 @@ html, body {
   background-color: gray;
   margin: 0 auto;
   .sprite {
-    width: 100px;
-    height: 100px;
     background-size: contain;
     // for animation
     transition: background-image .4s ease-in-out;
     -webkit-transition: background-image .4s ease-in-out;
+    transition: width .1s ease-in-out, height .1s ease-in-out;
+    -webkit-transition: width .1s ease-in-out, height .1s ease-in-out;
   }
   .sprite.bigmark-c { background-image: url(../img/bigmark-c.png); }
   .sprite.bigmark-m { background-image: url(../img/bigmark-m.png); }
   .sprite.bigmark-y { background-image: url(../img/bigmark-y.png); }
+  .sprite.md-size   { width: 100px; height: 100px; }
+  .sprite.lg-size   { width: 200px; height: 200px; }
 }
