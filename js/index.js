@@ -6,6 +6,8 @@ var imageClasses = [
   'bigmark-y',
 ];
 
+var inverted = false;
+
 // リサイズ関連
 var fitToWindow = function() {
   var height = $('#main').height();
@@ -68,6 +70,16 @@ var moveToTriangle = function () {
 
 var keel = function () {
   $('.sprite').keel();
+  if (inverted) {
+    $('#main').css({
+      backgroundColor: '#ffffff',
+    });
+  } else {
+    $('#main').css({
+      backgroundColor: '#000000',
+    });
+  }
+  inverted = !inverted;
 };
 
 var showText = function(){

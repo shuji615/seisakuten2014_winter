@@ -4,10 +4,16 @@ html, body {
   margin: 0px;
 }
 
+body {
+ background-color: white;
+}
+
 #main {
   height: 100%;
   @media all and (max-width: 719px) { // smart
     margin-top: 75px;
+    height: -webkit-calc(100% - 75px) ;
+    height: calc(100% - 75px);
   }
 }
 
