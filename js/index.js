@@ -33,9 +33,15 @@ var moveToHorizontal = function() {
 };
 
 var moveToTriangle = function () {
-    sprites[0].moveTo(0.3, 0.5, 0.2, 0.2);
-    sprites[1].moveTo(0.5, 0.5, 0.2, 0.2);
-    sprites[2].moveTo(0.7, 0.5, 0.2, 0.2);
+    var radius = 0.3;
+    var a0 = Math.PI / 2 * 3;
+
+    for (var i = 0; i < sprites.length; i++) {
+      var a = a0 + i * Math.PI * 2 / 3;
+      var x = 0.5 + radius * Math.cos(a);
+      var y = 0.5 + radius * Math.sin(a);
+      sprites[i].moveTo(x, y, 0.2, 0.2);
+    }
 }
 
 // main
@@ -54,31 +60,13 @@ $(function(){
     }
     $('.sprite').addClass(imageClasses[counter % imageClasses.length]);
 
-    // サイズ
-    var size = counter % 3 == 0 ? 'lg-size' : 'md-size';
-    var prevSize = (counter - 1) % 3 == 0 ? 'lg-size' : 'md-size';
-    // $('.sprite').removeClass(prevSize);
-    // $('.sprite').addClass(size);
+    if (counter % 2 == 0) {
+      moveToHorizontal();
+    } else {
+      moveToTriangle();
+    }
 
-    var marginLeft = counter % 2 == 0 ? '100px' : '0px';
-
-    moveToHorizontal();
-    $('.sprite').keel();
-
-    // $('.sprite').animate({
-    //   marginLeft: marginLeft,
-    // }, {
-    //   queue: false,
-    //   duration: 500,
-    //   easing: 'easeOutElastic'
-    // });
-    // $('.sprite').animate({
-    //   width: size,
-    //   height: size,
-    // }, {
-    //   queue: false,
-    //   duration: 500,
-    // });
+    // $('.sprite').keel();
 
     counter++;
   }, 1000);
