@@ -12,6 +12,7 @@ html, body {
   background-color: gray;
   margin: 0 auto; }
   #top .sprite {
+    position: absolute;
     background-size: contain;
     transition: background-image .4s ease-in-out;
     -webkit-transition: background-image .4s ease-in-out;
@@ -29,5 +30,11 @@ html, body {
   #top .sprite.lg-size {
     width: 200px;
     height: 200px; }
+  #top #sprite-0 {
+    left: 20%; }
+  #top #sprite-1 {
+    left: 50%; }
+  #top #sprite-2 {
+    left: 80%; }
 
 /*# sourceMappingURL=index.css.map */
