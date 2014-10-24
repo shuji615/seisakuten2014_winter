@@ -6,6 +6,9 @@ html, body {
 
 #main {
   height: 100%;
+  @media all and (max-width: 719px) { // smart
+    margin-top: 75px;
+  }
 }
 
 #top {
@@ -22,8 +25,6 @@ html, body {
     -webkit-transition: background-image .4s ease-in-out;
     transition: width .1s ease-in-out, height .1s ease-in-out;
     -webkit-transition: width .1s ease-in-out, height .1s ease-in-out;
-    // transition: transform .4s ease-in-out;
-    // -webkit-transition: transform .4s ease-in-out;
   }
   .sprite.bigmark-c { background-image: url(../img/bigmark-c.png); }
   .sprite.bigmark-m { background-image: url(../img/bigmark-m.png); }
@@ -34,5 +35,8 @@ html, body {
   .text {
     position: absolute;
     opacity: 0.0;
+    p {
+      font-size: 24px;
+    }
   }
 }

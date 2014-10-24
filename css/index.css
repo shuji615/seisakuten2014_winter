@@ -5,6 +5,9 @@ html, body {
 
 #main {
   height: 100%; }
+  @media all and (max-width: 719px) {
+    #main {
+      margin-top: 75px; } }
 
 #top {
   position: relative;
@@ -34,5 +37,7 @@ html, body {
   #top .text {
     position: absolute;
     opacity: 0.0; }
+    #top .text p {
+      font-size: 24px; }
 
 /*# sourceMappingURL=index.css.map */

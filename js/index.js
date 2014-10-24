@@ -6,7 +6,20 @@ var imageClasses = [
   'bigmark-y',
 ];
 
-// jqueryの実装
+// リサイズ関連
+var fitToWindow = function() {
+  var height = $('#main').height();
+  var width  = $('#main').width();
+  var size = height < width ? height : width;
+  $('#top').css({
+    width: size,
+    height: size,
+  });
+};
+
+$(window).resize(function(){ fitToWindow(); });
+
+// jqueryの拡張
 $.fn.extend({
   moveTo: function(x, y, width, height){
     this.animate({
@@ -63,17 +76,25 @@ var showText = function(){
     var text = texts[i];
     var pos = sprite.position();
     text.css({
-      left: pos.left + sprite.width(),
-      top:  pos.top + sprite.height() / 2 - text.height() / 2,
+      left: pos.left + sprite.width() / 2 - text.width() / 2,
+      top:  pos.top + sprite.height(),
+    });
+    sprite.animate({
+      top: pos.top - sprite.height() / 4,
+    },{
+      queue: false,
+      duration: 500,
+      easing: 'easeOutElastic'
     });
   }
 
   $('.text').animate({
     opacity: '1.0',
   },{
-      queue: false,
-      duration: 500,
-    });
+    queue: false,
+    duration: 500,
+  });
+
 };
 
 var hideText = function(){
@@ -82,7 +103,8 @@ var hideText = function(){
   },{
       queue: false,
       duration: 200,
-    });
+  });
+  moveToTriangle();
 };
 
 // loop
@@ -107,6 +129,8 @@ var loop = [
 // main
 
 $(function(){
+  fitToWindow();
+
   sprites = [$('#sprite-0'), $('#sprite-1'), $('#sprite-2'), ];
   texts = [$('#text-0'), $('#text-1'), $('#text-2'), ]
 
