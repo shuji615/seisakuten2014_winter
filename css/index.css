@@ -7,6 +7,7 @@ html, body {
   height: 100%; }
 
 #top {
+  position: relative;
   width: 500px;
   height: 500px;
   background-color: gray;
@@ -25,11 +26,11 @@ html, body {
   #top .sprite.bigmark-y {
     background-image: url(../img/bigmark-y.png); }
   #top .sprite.md-size {
-    width: 100px;
-    height: 100px; }
+    width: 20%;
+    height: 20%; }
   #top .sprite.lg-size {
-    width: 200px;
-    height: 200px; }
+    width: 40%;
+    height: 40%; }
   #top #sprite-0 {
     left: 20%; }
   #top #sprite-1 {

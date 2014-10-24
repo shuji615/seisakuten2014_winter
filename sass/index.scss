@@ -9,6 +9,7 @@ html, body {
 }
 
 #top {
+  position: relative;
   width: 500px;
   height: 500px;
   background-color: gray;
@@ -25,8 +26,8 @@ html, body {
   .sprite.bigmark-c { background-image: url(../img/bigmark-c.png); }
   .sprite.bigmark-m { background-image: url(../img/bigmark-m.png); }
   .sprite.bigmark-y { background-image: url(../img/bigmark-y.png); }
-  .sprite.md-size   { width: 100px; height: 100px; }
-  .sprite.lg-size   { width: 200px; height: 200px; }
+  .sprite.md-size   { width: 20%; height: 20%; }
+  .sprite.lg-size   { width: 40%; height: 40%; }
   #sprite-0 {left: 20%; }
   #sprite-1 {left: 50%; }
   #sprite-2 {left: 80%; }
