@@ -5,6 +5,7 @@ var imageClasses = [
   'bigmark-y',
 ];
 
+// jqueryの実装
 $.fn.extend({
   moveTo: function(x, y, width, height){
     this.animate({
@@ -22,6 +23,22 @@ $.fn.extend({
     });
   },
 });
+
+// 整列の実装
+
+var moveToHorizontal = function() {
+    sprites[0].moveTo(0.3, 0.5, 0.2, 0.2);
+    sprites[1].moveTo(0.5, 0.5, 0.2, 0.2);
+    sprites[2].moveTo(0.7, 0.5, 0.2, 0.2);
+};
+
+var moveToTriangle = function () {
+    sprites[0].moveTo(0.3, 0.5, 0.2, 0.2);
+    sprites[1].moveTo(0.5, 0.5, 0.2, 0.2);
+    sprites[2].moveTo(0.7, 0.5, 0.2, 0.2);
+}
+
+// main
 
 $(function(){
   sprites = [
@@ -45,10 +62,8 @@ $(function(){
 
     var marginLeft = counter % 2 == 0 ? '100px' : '0px';
 
-    $('#sprite-0').moveTo(0.3, 0.5, 0.2, 0.2);
-    $('#sprite-1').moveTo(0.5, 0.5, 0.2, 0.2);
-    $('#sprite-2').moveTo(0.7, 0.5, 0.2, 0.2);
-    $('#sprite-0').keel();
+    moveToHorizontal();
+    $('.sprite').keel();
 
     // $('.sprite').animate({
     //   marginLeft: marginLeft,
