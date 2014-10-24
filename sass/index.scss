@@ -30,4 +30,8 @@ html, body {
   .sprite.bigmark-y { background-image: url(../img/bigmark-y.png); }
   .sprite.md-size   { width: 20%; height: 20%; }
   .sprite.lg-size   { width: 40%; height: 40%; }
+
+  .text {
+    position: absolute;
+  }
 }
