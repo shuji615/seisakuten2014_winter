@@ -83,6 +83,8 @@ var keel = function () {
       sprite.removeClass(imageClassesInverted[i]);
       sprite.addClass(imageClasses[i]);
     }
+    $('.text .inverted').addClass('hidden');
+    $('.text .default').removeClass('hidden');
     $('#main').css({
       backgroundColor: '#ffffff',
     });
@@ -92,6 +94,8 @@ var keel = function () {
       sprite.removeClass(imageClasses[i]);
       sprite.addClass(imageClassesInverted[i]);
     }
+    $('.text .inverted').removeClass('hidden');
+    $('.text .default').addClass('hidden');
     $('#main').css({
       backgroundColor: '#000000',
     });
