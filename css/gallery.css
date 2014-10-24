@@ -20,12 +20,12 @@
   background-position: center; }
 
 #gallery {
-  background-color: rgba(255, 255, 255, 0.5); }
+  background-color: rgba(0, 0, 0, 0.5); }
   #gallery .title {
     border-bottom: solid 3px;
-    border-bottom-color: black; }
+    border-bottom-color: #ecf0f1; }
     #gallery .title p {
-      color: black; }
+      color: #ecf0f1; }
   #gallery ul {
     clear: left; }
     #gallery ul li {

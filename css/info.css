@@ -7,14 +7,14 @@
   background-size: cover; }
 
 p {
-  color: black; }
+  color: #ecf0f1; }
 
 #info {
-  background-color: rgba(255, 255, 255, 0.6); }
+  background-color: rgba(0, 0, 0, 0.5); }
   #info .title {
     width: 280px;
     border-bottom: solid 3px;
-    border-bottom-color: black; }
+    border-bottom-color: #ecf0f1; }
     #info .title p {
       font-size: 60px; }
     @media all and (max-width: 719px) {

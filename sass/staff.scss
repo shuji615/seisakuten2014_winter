@@ -9,16 +9,24 @@
 }
 
 #staff {
-  background-color: rgba(255, 255, 255, 0.8);
+  .title {
+    border-bottom: solid 3px;
+    border-bottom-color: #ecf0f1;
+  }
+  p {
+    color: #ecf0f1;
+  }
+  background-color: rgba(0, 0, 0, 0.5);
   ul#staff-list {
     padding-bottom: 100px;
     &>li {
       padding-top: 20px;
-      border-bottom: dotted 2px black;
+      border-bottom: dotted 2px #ecf0f1;
       .subtitle {
         clear: left;
         margin-left: 40px;
         margin-bottom: 20px;
+        border-bottom-color: #ecf0f1;
         p {
           font-size: 24px;
         }
@@ -32,6 +40,7 @@
         float: left;
         width: 120px;
         margin-right: 20px;
+        margin-bottom: 10px;
       }
     }
     &>li:last-child {
