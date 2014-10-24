@@ -58,6 +58,16 @@ var keel = function () {
 };
 
 var showText = function(){
+  for (var i = 0; i < sprites.length; i++) {
+    var sprite = sprites[i];
+    var text = texts[i];
+    var pos = sprite.position();
+    text.css({
+      left: pos.left + sprite.width(),
+      top:  pos.top + sprite.height() / 2 - text.height() / 2,
+    });
+  }
+
   $('.text').animate({
     opacity: '1.0',
   },{
