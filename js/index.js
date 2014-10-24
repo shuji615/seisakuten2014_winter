@@ -6,15 +6,18 @@ var imageClasses = [
 ];
 
 $.fn.extend({
-  moveTo: function(pos, size){
-    $('.sprite').animate({
-      marginLeft: ((pos.x - size.width)  * 100) + '%',
-      marginTop:  ((pos.y - size.height) * 100) + '%',
+  moveTo: function(x, y, width, height){
+    this.animate({
+      left: ((x - width/2)  * 100) + '%',
+      top:  ((y - height/2) * 100) + '%',
     }, {
       queue: false,
       duration: 500,
       easing: 'easeOutElastic'
     });
+  },
+  keel: function() {
+    this.addClass('keel');
   },
 });
 
@@ -39,13 +42,19 @@ $(function(){
     $('.sprite').addClass(size);
 
     var marginLeft = counter % 2 == 0 ? '100px' : '0px';
-    $('.sprite').animate({
-      marginLeft: marginLeft,
-    }, {
-      queue: false,
-      duration: 500,
-      easing: 'easeOutElastic'
-    });
+
+    $('#sprite-0').moveTo(0.3, 0.5, 0.2, 0.2);
+    $('#sprite-1').moveTo(0.5, 0.5, 0.2, 0.2);
+    $('#sprite-2').moveTo(0.7, 0.5, 0.2, 0.2);
+    // $('#sprite-0').keel();
+
+    // $('.sprite').animate({
+    //   marginLeft: marginLeft,
+    // }, {
+    //   queue: false,
+    //   duration: 500,
+    //   easing: 'easeOutElastic'
+    // });
     // $('.sprite').animate({
     //   width: size,
     //   height: size,

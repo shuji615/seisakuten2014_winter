@@ -31,11 +31,15 @@ html, body {
   #top .sprite.lg-size {
     width: 40%;
     height: 40%; }
-  #top #sprite-0 {
-    left: 20%; }
-  #top #sprite-1 {
-    left: 50%; }
-  #top #sprite-2 {
-    left: 80%; }
+  #top .sprite.keel {
+    -webkit-animation-name: turnZ;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: 1; }
+
+@-webkit-keyframes turnZ {
+  0% {
+    -webkit-transform: rotateZ(0deg); }
+  100% {
+    -webkit-transform: rotateZ(180deg); } }
 
 /*# sourceMappingURL=index.css.map */
