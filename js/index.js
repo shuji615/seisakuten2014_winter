@@ -5,6 +5,19 @@ var imageClasses = [
   'bigmark-y',
 ];
 
+$.fn.extend({
+  moveTo: function(pos, size){
+    $('.sprite').animate({
+      marginLeft: ((pos.x - size.width)  * 100) + '%',
+      marginTop:  ((pos.y - size.height) * 100) + '%',
+    }, {
+      queue: false,
+      duration: 500,
+      easing: 'easeOutElastic'
+    });
+  },
+});
+
 $(function(){
   sprites = [
     $('#sprite-0'),
