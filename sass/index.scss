@@ -24,6 +24,8 @@ body {
   margin: 0 auto;
   .sprite {
     position: absolute;
+    width: 20%;
+    height: 20%;
     background-size: contain;
     // for animation
     transition: background-image .4s ease-in-out;
@@ -37,8 +39,19 @@ body {
   .sprite.bigmark-r { background-image: url(../img/bigmark-r.png); }
   .sprite.bigmark-g { background-image: url(../img/bigmark-g.png); }
   .sprite.bigmark-b { background-image: url(../img/bigmark-b.png); }
-  .sprite.md-size   { width: 20%; height: 20%; }
-  .sprite.lg-size   { width: 40%; height: 40%; }
+
+  #sprite-0 {
+    left: 20%;
+    top: 40%;
+  }
+  #sprite-1 {
+    left: 40%;
+    top: 40%;
+  }
+  #sprite-2 {
+    left: 60%;
+    top: 40%;
+  }
 
   .hidden { display: none; }
   .text {
