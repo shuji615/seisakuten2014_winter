@@ -42,7 +42,7 @@ $.fn.extend({
   },
   keel: function() {
     this.transition({
-      rotate: '+=180deg',
+      rotate: '+=360deg',
     });
   },
 });
