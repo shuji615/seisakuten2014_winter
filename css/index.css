@@ -32,6 +32,7 @@ html, body {
     width: 40%;
     height: 40%; }
   #top .text {
-    position: absolute; }
+    position: absolute;
+    opacity: 0.0; }
 
 /*# sourceMappingURL=index.css.map */

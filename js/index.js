@@ -1,4 +1,5 @@
 var sprites;
+var texts;
 var imageClasses = [
   'bigmark-c',
   'bigmark-m',
@@ -56,6 +57,24 @@ var keel = function () {
   $('.sprite').keel();
 };
 
+var showText = function(){
+  $('.text').animate({
+    opacity: '1.0',
+  },{
+      queue: false,
+      duration: 500,
+    });
+};
+
+var hideText = function(){
+  $('.text').animate({
+    opacity: '0.0',
+  },{
+      queue: false,
+      duration: 200,
+    });
+};
+
 // loop
 var loop = [
   function(){
@@ -67,16 +86,19 @@ var loop = [
   function(){
     moveToTriangle();
   },
+  function(){
+    showText();
+  },
+  function(){
+    hideText();
+  },
 ];
 
 // main
 
 $(function(){
-  sprites = [
-    $('#sprite-0'),
-    $('#sprite-1'),
-    $('#sprite-2'),
-  ];
+  sprites = [$('#sprite-0'), $('#sprite-1'), $('#sprite-2'), ];
+  texts = [$('#text-0'), $('#text-1'), $('#text-2'), ]
 
   var counter = 0;
   setInterval(function(){
