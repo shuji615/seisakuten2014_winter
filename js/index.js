@@ -30,6 +30,10 @@ var moveToHorizontal = function() {
     sprites[0].moveTo(0.3, 0.5, 0.2, 0.2);
     sprites[1].moveTo(0.5, 0.5, 0.2, 0.2);
     sprites[2].moveTo(0.7, 0.5, 0.2, 0.2);
+    $('.sprite').transition({
+      scale: 4,
+      duration: 0.2
+    });
 };
 
 var moveToTriangle = function () {
@@ -42,7 +46,28 @@ var moveToTriangle = function () {
       var y = 0.5 + radius * Math.sin(a);
       sprites[i].moveTo(x, y, 0.2, 0.2);
     }
+    $('.sprite').transition({
+      scale: 1,
+      duration: 0.2,
+    });
 }
+
+var keel = function () {
+  $('.sprite').keel();
+};
+
+// loop
+var loop = [
+  function(){
+    moveToHorizontal();
+  },
+  function(){
+    keel();
+  },
+  function(){
+    moveToTriangle();
+  },
+];
 
 // main
 
@@ -60,13 +85,7 @@ $(function(){
     }
     $('.sprite').addClass(imageClasses[counter % imageClasses.length]);
 
-    if (counter % 2 == 0) {
-      moveToHorizontal();
-    } else {
-      moveToTriangle();
-    }
-
-    // $('.sprite').keel();
+    loop[counter % loop.length]();
 
     counter++;
   }, 1000);
