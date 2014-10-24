@@ -21,7 +21,6 @@ body {
   position: relative;
   width: 500px;
   height: 500px;
-  background-color: gray;
   margin: 0 auto;
   .sprite {
     position: absolute;
@@ -35,14 +34,22 @@ body {
   .sprite.bigmark-c { background-image: url(../img/bigmark-c.png); }
   .sprite.bigmark-m { background-image: url(../img/bigmark-m.png); }
   .sprite.bigmark-y { background-image: url(../img/bigmark-y.png); }
+  .sprite.bigmark-r { background-image: url(../img/bigmark-r.png); }
+  .sprite.bigmark-g { background-image: url(../img/bigmark-g.png); }
+  .sprite.bigmark-b { background-image: url(../img/bigmark-b.png); }
   .sprite.md-size   { width: 20%; height: 20%; }
   .sprite.lg-size   { width: 40%; height: 40%; }
 
+  .hidden { display: none; }
   .text {
     position: absolute;
     opacity: 0.0;
     p {
+      text-align: center;
+      line-height: 28px;
       font-size: 24px;
     }
+    p.default { color: black; }
+    p.inverted { color: white; }
   }
 }

@@ -6,6 +6,12 @@ var imageClasses = [
   'bigmark-y',
 ];
 
+var imageClassesInverted = [
+  'bigmark-r',
+  'bigmark-g',
+  'bigmark-b',
+];
+
 var inverted = false;
 
 // リサイズ関連
@@ -16,6 +22,7 @@ var fitToWindow = function() {
   $('#top').css({
     width: size,
     height: size,
+    top: (height - size) / 2
   });
 };
 
@@ -47,7 +54,7 @@ var moveToHorizontal = function() {
     sprites[1].moveTo(0.5, 0.5, 0.2, 0.2);
     sprites[2].moveTo(0.7, 0.5, 0.2, 0.2);
     $('.sprite').transition({
-      scale: 4,
+      scale: 2,
       duration: 0.2
     });
 };
@@ -71,10 +78,20 @@ var moveToTriangle = function () {
 var keel = function () {
   $('.sprite').keel();
   if (inverted) {
+    for (var i = 0; i < sprites.length; i++) {
+      var sprite = sprites[i];
+      sprite.removeClass(imageClassesInverted[i]);
+      sprite.addClass(imageClasses[i]);
+    }
     $('#main').css({
       backgroundColor: '#ffffff',
     });
   } else {
+    for (var i = 0; i < sprites.length; i++) {
+      var sprite = sprites[i];
+      sprite.removeClass(imageClasses[i]);
+      sprite.addClass(imageClassesInverted[i]);
+    }
     $('#main').css({
       backgroundColor: '#000000',
     });
@@ -148,11 +165,6 @@ $(function(){
 
   var counter = 0;
   setInterval(function(){
-    for (var i = 0; i < imageClasses.length; i++) {
-      $('.sprite').removeClass(imageClasses[i]);
-    }
-    $('.sprite').addClass(imageClasses[counter % imageClasses.length]);
-
     loop[counter % loop.length]();
 
     counter++;
