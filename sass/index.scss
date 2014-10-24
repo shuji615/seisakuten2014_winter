@@ -30,19 +30,4 @@ html, body {
   .sprite.bigmark-y { background-image: url(../img/bigmark-y.png); }
   .sprite.md-size   { width: 20%; height: 20%; }
   .sprite.lg-size   { width: 40%; height: 40%; }
-  .sprite.keel      {
-      -webkit-animation-name: turnZ;
-      -webkit-animation-duration: 0.2s;
-      -webkit-animation-iteration-count: 1;
-
-    // transform: rotateZ(180deg);
-  }
-  // #sprite-0 {left: 20%; }
-  // #sprite-1 {left: 50%; }
-  // #sprite-2 {left: 80%; }
-}
-
-@-webkit-keyframes turnZ{
-  0%{-webkit-transform: rotateZ(0deg);}
-  100%{-webkit-transform: rotateZ(180deg);}
 }

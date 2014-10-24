@@ -17,7 +17,9 @@ $.fn.extend({
     });
   },
   keel: function() {
-    this.addClass('keel');
+    this.transition({
+      rotate: '+=180deg',
+    });
   },
 });
 
@@ -38,15 +40,15 @@ $(function(){
     // サイズ
     var size = counter % 3 == 0 ? 'lg-size' : 'md-size';
     var prevSize = (counter - 1) % 3 == 0 ? 'lg-size' : 'md-size';
-    $('.sprite').removeClass(prevSize);
-    $('.sprite').addClass(size);
+    // $('.sprite').removeClass(prevSize);
+    // $('.sprite').addClass(size);
 
     var marginLeft = counter % 2 == 0 ? '100px' : '0px';
 
     $('#sprite-0').moveTo(0.3, 0.5, 0.2, 0.2);
     $('#sprite-1').moveTo(0.5, 0.5, 0.2, 0.2);
     $('#sprite-2').moveTo(0.7, 0.5, 0.2, 0.2);
-    // $('#sprite-0').keel();
+    $('#sprite-0').keel();
 
     // $('.sprite').animate({
     //   marginLeft: marginLeft,
