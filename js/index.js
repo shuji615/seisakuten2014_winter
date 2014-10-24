@@ -60,19 +60,20 @@ var moveToHorizontal = function() {
 };
 
 var moveToTriangle = function () {
-    var radius = 0.3;
-    var a0 = Math.PI / 2 * 3;
+  var radius = 0.3;
+  var origin = {x: 0.5, y: 0.55};
+  var a0 = Math.PI / 2 * 3;
 
-    for (var i = 0; i < sprites.length; i++) {
-      var a = a0 + i * Math.PI * 2 / 3;
-      var x = 0.5 + radius * Math.cos(a);
-      var y = 0.5 + radius * Math.sin(a);
-      sprites[i].moveTo(x, y, 0.2, 0.2);
-    }
-    $('.sprite').transition({
-      scale: 1,
-      duration: 0.2,
-    });
+  for (var i = 0; i < sprites.length; i++) {
+    var a = a0 + i * Math.PI * 2 / 3;
+    var x = origin.x + radius * Math.cos(a);
+    var y = origin.y + radius * Math.sin(a);
+    sprites[i].moveTo(x, y, 0.2, 0.2);
+  }
+  $('.sprite').transition({
+    scale: 1,
+    duration: 0.2,
+  });
 }
 
 var keel = function () {
