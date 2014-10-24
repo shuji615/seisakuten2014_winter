@@ -86,7 +86,7 @@ var keel = function () {
     }
     $('.text .inverted').addClass('hidden');
     $('.text .default').removeClass('hidden');
-    $('#main').css({
+    $('#top-background').css({
       backgroundColor: '#ffffff',
     });
   } else {
@@ -97,7 +97,7 @@ var keel = function () {
     }
     $('.text .inverted').removeClass('hidden');
     $('.text .default').addClass('hidden');
-    $('#main').css({
+    $('#top-background').css({
       backgroundColor: '#000000',
     });
   }
