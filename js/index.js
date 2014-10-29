@@ -164,7 +164,7 @@ var toggle = function(){
   var size = $('#main').width();
   var origin = {x: size/2, y: size/2};
   var a0 = Math.PI * Math.random();
-  var radius = size / 20;
+  var radius = 0;
 
   for (var i = 0; i < sprites.length; i++) {
     var sprite = sprites[i];
@@ -184,7 +184,7 @@ var toggle = function(){
       left: pos.left,
     },{
       queue: true,
-      duration: 500,
+      duration: 800,
       easing: 'easeOutElastic',
     });
   }
@@ -225,6 +225,6 @@ $(function(){
     loop[counter % loop.length]();
 
     counter++;
-  }, 1000);
+  }, 1200);
 
 });
