@@ -184,7 +184,7 @@ var toggle = function(){
       left: pos.left,
     },{
       queue: true,
-      duration: 1000,
+      duration: 800,
       easing: 'easeOutElastic',
     });
   }
@@ -225,6 +225,6 @@ $(function(){
     loop[counter % loop.length]();
 
     counter++;
-  }, 1500);
+  }, 1200);
 
 });
