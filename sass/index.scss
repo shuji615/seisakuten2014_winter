@@ -23,6 +23,21 @@ body {
   width: 500px;
   height: 500px;
   margin: 0 auto;
+
+  #top-logo {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 80%;
+    z-index: 1;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
   .sprite {
     position: absolute;
     width: 50%;

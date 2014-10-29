@@ -164,7 +164,7 @@ var toggle = function(){
   var size = $('#main').width();
   var origin = {x: size/2, y: size/2};
   var a0 = Math.PI * Math.random();
-  var radius = size / 20;
+  var radius = size / 3;
 
   for (var i = 0; i < sprites.length; i++) {
     var sprite = sprites[i];
