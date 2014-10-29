@@ -26,10 +26,10 @@ body {
 
   #top-logo {
     position: absolute;
-    left: 10%;
-    top: 10%;
-    width: 80%;
-    height: 80%;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    height: 90%;
     z-index: 1;
     img {
       display: block;
@@ -40,8 +40,9 @@ body {
 
   .sprite {
     position: absolute;
-    width: 50%;
-    height: 50%;
+    opacity: 0.95;
+    width: 80%;
+    height: 80%;
     background-size: contain;
     // for animation
     transition: background-image .4s ease-in-out;
@@ -57,16 +58,16 @@ body {
   .sprite.bigmark-b { background-image: url(../img/bigmark-b.png); }
 
   #sprite-0 {
-    left: 0%;
-    top: 25%;
+    left: -20%;
+    top: 10%;
   }
   #sprite-1 {
-    left: 25%;
-    top: 25%;
+    left: 10%;
+    top: 10%;
   }
   #sprite-2 {
-    left: 50%;
-    top: 25%;
+    left: 40%;
+    top: 10%;
   }
 
   .hidden { display: none; }
