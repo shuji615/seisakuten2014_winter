@@ -37,10 +37,10 @@ ul {
   border-right: 1px solid #95a5a6;
   background-color: white; }
   #nav #nav-top-image {
-    margin-top: 20px;
-    margin-left: 29px; }
+    margin-top: 60px;
+    margin-left: 14px; }
     #nav #nav-top-image img {
-      width: 120px;
+      width: 150px;
       height: auto; }
   #nav #links {
     width: 100%;
@@ -85,8 +85,8 @@ ul {
       margin-left: 10px; }
       #nav #nav-top-image img {
         float: left;
-        width: 50px;
-        height: auto; }
+        width: auto;
+        height: 55px; }
     #nav #links {
       float: right;
       width: 480px;
@@ -146,7 +146,7 @@ ul {
         color: black;
         text-align: center;
         font-size: 8px; } }
-@media all and (max-width: 559px) {
+@media all and (max-width: 600px) {
   #nav #links {
     width: 240px;
     margin-top: 0px; } }

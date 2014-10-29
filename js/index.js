@@ -42,7 +42,11 @@ $.fn.extend({
   },
   keel: function() {
     this.transition({
-      rotate: '+=180deg',
+      rotate: '0deg',
+      duration: 0
+    });
+    this.transition({
+      rotate: '360deg',
     });
   },
 });
@@ -141,23 +145,71 @@ var hideText = function(){
   moveToTriangle();
 };
 
+var toggle = function(){
+  if (inverted) {
+    for (var i = 0; i < sprites.length; i++) {
+      var sprite = sprites[i];
+      sprite.removeClass(imageClassesInverted[i]);
+      sprite.addClass(imageClasses[i]);
+    }
+  } else {
+    for (var i = 0; i < sprites.length; i++) {
+      var sprite = sprites[i];
+      sprite.removeClass(imageClasses[i]);
+      sprite.addClass(imageClassesInverted[i]);
+    }
+  }
+  inverted = !inverted;
+  // 動かす
+  var size = $('#main').width();
+  var origin = {x: size/2, y: size/2};
+  var a0 = Math.PI * Math.random();
+  var radius = size / 20;
+
+  for (var i = 0; i < sprites.length; i++) {
+    var sprite = sprites[i];
+    var a = a0 + i * Math.PI * 2 / 3;
+    var x = origin.x + radius * Math.cos(a);
+    var y = origin.y + radius * Math.sin(a);
+    var pos = sprite.position();
+    sprite.animate({
+      top: y - sprite.height()/2,
+      left: x - sprite.width()/2,
+    },{
+      queue: true,
+      duration: 10
+    });
+    sprite.animate({
+      top: pos.top,
+      left: pos.left,
+    },{
+      queue: true,
+      duration: 500,
+      easing: 'easeOutElastic',
+    });
+  }
+};
+
 // loop
 var loop = [
   function(){
-    moveToHorizontal();
+    toggle();
   },
-  function(){
-    keel();
-  },
-  function(){
-    moveToTriangle();
-  },
-  function(){
-    showText();
-  },
-  function(){
-    hideText();
-  },
+  // function(){
+  //   moveToHorizontal();
+  // },
+  // function(){
+  //   keel();
+  // },
+  // function(){
+  //   moveToTriangle();
+  // },
+  // function(){
+  //   showText();
+  // },
+  // function(){
+  //   hideText();
+  // },
 ];
 
 // main

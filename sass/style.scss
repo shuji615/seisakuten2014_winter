@@ -53,10 +53,10 @@ ul {
   border-right: 1px solid #95a5a6;
   background-color: white;
   #nav-top-image {
-    margin-top: 20px;
-    margin-left: 29px;
+    margin-top: 60px;
+    margin-left: 14px;
     img {
-      width: 120px;
+      width: 150px;
       height: auto;
     }
   }
@@ -104,8 +104,8 @@ ul {
       margin-left: 10px;
       img {
         float: left;
-        width: 50px;
-        height: auto;
+        width: auto;
+        height: 55px;
       }
     }
     #links {
@@ -176,7 +176,7 @@ ul {
   }
 }
 
-@media all and (max-width: 559px) { // smart
+@media all and (max-width: 600px) { // smart
   #nav #links {
     width: 240px;
     margin-top: 0px

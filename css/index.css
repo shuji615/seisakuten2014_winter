@@ -7,6 +7,7 @@ body {
   background-color: white; }
 
 #main {
+  background-color: black;
   height: 100%; }
   @media all and (max-width: 719px) {
     #main {
@@ -21,8 +22,8 @@ body {
   margin: 0 auto; }
   #top .sprite {
     position: absolute;
-    width: 20%;
-    height: 20%;
+    width: 50%;
+    height: 50%;
     background-size: contain;
     transition: background-image .4s ease-in-out;
     -webkit-transition: background-image .4s ease-in-out;
@@ -41,14 +42,14 @@ body {
   #top .sprite.bigmark-b {
     background-image: url(../img/bigmark-b.png); }
   #top #sprite-0 {
-    left: 20%;
-    top: 40%; }
+    left: 0%;
+    top: 25%; }
   #top #sprite-1 {
-    left: 40%;
-    top: 40%; }
+    left: 25%;
+    top: 25%; }
   #top #sprite-2 {
-    left: 60%;
-    top: 40%; }
+    left: 50%;
+    top: 25%; }
   #top .hidden {
     display: none; }
   #top .text {
