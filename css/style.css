@@ -146,7 +146,7 @@ ul {
         color: black;
         text-align: center;
         font-size: 8px; } }
-@media all and (max-width: 559px) {
+@media all and (max-width: 600px) {
   #nav #links {
     width: 240px;
     margin-top: 0px; } }
