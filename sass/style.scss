@@ -156,10 +156,11 @@ ul {
       margin: 10px auto;
     }
     .link {
+      position: relative;
+      width: 18%;
       float: left;
-      margin-left: 5px;
+      margin-left: 2%;
       margin-bottom: 10px;
-      width: auto;
       height: 18px;
       a {
         // display: block;
