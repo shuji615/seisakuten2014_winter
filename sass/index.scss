@@ -25,8 +25,8 @@ body {
   margin: 0 auto;
   .sprite {
     position: absolute;
-    width: 80%;
-    height: 80%;
+    width: 50%;
+    height: 50%;
     background-size: contain;
     // for animation
     transition: background-image .4s ease-in-out;
@@ -42,16 +42,16 @@ body {
   .sprite.bigmark-b { background-image: url(../img/bigmark-b.png); }
 
   #sprite-0 {
-    left: -25%;
-    top: 10%;
+    left: 0%;
+    top: 25%;
   }
   #sprite-1 {
-    left: 10%;
-    top: 10%;
+    left: 25%;
+    top: 25%;
   }
   #sprite-2 {
-    left: 45%;
-    top: 10%;
+    left: 50%;
+    top: 25%;
   }
 
   .hidden { display: none; }
