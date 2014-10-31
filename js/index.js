@@ -124,9 +124,9 @@ var particle = {
         this.initCss();
         var _this = this;
         var canvasWrapper = $('#intro_back');
-        var width = canvasWrapper.width();
-        var height = canvasWrapper.height();
         var canvas = document.getElementById('intro_back_canvas');
+        var width  = canvasWrapper.width();
+        var height = canvasWrapper.height();
         var ctx = canvas.getContext("2d");
         var rate = 30;
         var num = 50;
@@ -166,7 +166,7 @@ var particle = {
             this.age = 0;
             this.rotateSpeed = 0.05;
             this.startRotation = Math.random() * Math.PI * 2;
-            this.hidden = true;
+            // this.hidden = true;
         };
 
         this.Egg.prototype.update = function(){
