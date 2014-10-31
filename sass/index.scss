@@ -9,6 +9,7 @@ body {
 }
 
 #main {
+  position: fixed;
   background-color: black;
   height: 100%;
   @media all and (max-width: 719px) { // smart
