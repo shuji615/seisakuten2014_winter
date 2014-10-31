@@ -128,7 +128,7 @@ var particle = {
         var height = canvasWrapper.height();
         var canvas = document.getElementById('intro_back_canvas');
         var ctx = canvas.getContext("2d");
-        var rate = 60;
+        var rate = 30;
         var num = 50;
         var size = 70;
         this.eggs = new Array;
@@ -162,7 +162,7 @@ var particle = {
             this.size = Math.random()*(size - 10) + 10;
             this.width = this.size * 19 / 20;
             this.height = this.size * 26 / 20;
-            this.speed = 30;
+            this.speed = 5;
             this.age = 0;
             this.rotateSpeed = 0.05;
             this.startRotation = Math.random() * Math.PI * 2;
@@ -196,18 +196,8 @@ var particle = {
         this.Egg.prototype.draw = function(ctx){
             if(this.hidden) return;
             ctx.setTransform(1, 0, 0, 1, this.x, this.y);
-            var rotation = this.startRotation + this.age * this.rotateSpeed;
-            ctx.rotate(rotation);
             ctx.beginPath();
-            var h = this.height;
-            var w = this.width;
-            var m = 4./3 * (Math.sqrt(2)-1);
-            var a = h/5;
-            ctx.moveTo(-w, a);
-            ctx.bezierCurveTo(-w, h*m+a, -w*m, h, 0, h);
-            ctx.bezierCurveTo(w*m, h, w, h*m+a, w, +a);
-            ctx.bezierCurveTo(w, -h*m+a, w*m, -h, 0, -h);
-            ctx.bezierCurveTo(-w*m, -h, -w, -h*m+a, -w, a);
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI*2, false);
             ctx.fillStyle = "rgba("+ this.r + ", " + this.g + ", " + this.b + ", .6)";
             ctx.fill();
         };
