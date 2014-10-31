@@ -62,18 +62,5 @@ body {
   #top #sprite-2 {
     left: 40%;
     top: 10%; }
-  #top .hidden {
-    display: none; }
-  #top .text {
-    position: absolute;
-    opacity: 0.0; }
-    #top .text p {
-      text-align: center;
-      line-height: 28px;
-      font-size: 24px; }
-    #top .text p.default {
-      color: black; }
-    #top .text p.inverted {
-      color: white; }
 
 /*# sourceMappingURL=index.css.map */

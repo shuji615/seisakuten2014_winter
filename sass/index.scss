@@ -69,17 +69,4 @@ body {
     left: 40%;
     top: 10%;
   }
-
-  .hidden { display: none; }
-  .text {
-    position: absolute;
-    opacity: 0.0;
-    p {
-      text-align: center;
-      line-height: 28px;
-      font-size: 24px;
-    }
-    p.default { color: black; }
-    p.inverted { color: white; }
-  }
 }
