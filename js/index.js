@@ -173,8 +173,7 @@ var toggle = function(){
     var y = origin.y + radius * Math.sin(a);
     var pos = sprite.position();
     sprite.animate({
-      top: y - sprite.height()/2,
-      left: x - sprite.width()/2,
+      top: pos.top + sprite.height()/10 * (i % 2 == 0 ? 1 : -1),
     },{
       queue: true,
       duration: 10
@@ -184,7 +183,7 @@ var toggle = function(){
       left: pos.left,
     },{
       queue: true,
-      duration: 800,
+      duration: 400,
       easing: 'easeOutElastic',
     });
   }
