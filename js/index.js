@@ -107,12 +107,12 @@ var particle = {
     initCss:function(){
         // var canvasWrapper = $('#intro_back');
         var width = $(window).width();
-        var height = $('#intro_bridge').height();
+        var height = $(window).height();
         var margin = 200;
-        $('#intro_back').css(
-            'height', height + margin * 2
+        $('#intro_back_canvas').css(
+            'height', height
         ).css(
-            'top', -margin
+            'top', 0
         );
         // $('#intro_back').css(
         //     'height', height + margin
@@ -300,5 +300,6 @@ $(function(){
   }, 1200);
 
   particle.init();
+  particle.startAnimation();
 
 });
