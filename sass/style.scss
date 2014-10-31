@@ -178,6 +178,15 @@ ul {
 }
 
 @media all and (max-width: 600px) { // smart
+  #nav {
+    #nav-top-image {
+      img {
+        margin-top: 7px;
+        width: 68px;
+        height: auto;
+      }
+    }
+  }
   #nav #links {
     width: 240px;
     margin-top: 0px

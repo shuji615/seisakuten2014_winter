@@ -7,6 +7,7 @@ body {
   background-color: white; }
 
 #main {
+  position: fixed;
   background-color: black;
   height: 100%; }
   @media all and (max-width: 719px) {
@@ -14,6 +15,13 @@ body {
       margin-top: 75px;
       height: -webkit-calc(100% - 75px);
       height: calc(100% - 75px); } }
+
+#intro_back {
+  position: fixed;
+  width: 100%;
+  height: 100%; }
+  #intro_back canvas {
+    position: fixed; }
 
 #top {
   position: relative;
@@ -62,18 +70,5 @@ body {
   #top #sprite-2 {
     left: 40%;
     top: 10%; }
-  #top .hidden {
-    display: none; }
-  #top .text {
-    position: absolute;
-    opacity: 0.0; }
-    #top .text p {
-      text-align: center;
-      line-height: 28px;
-      font-size: 24px; }
-    #top .text p.default {
-      color: black; }
-    #top .text p.inverted {
-      color: white; }
 
 /*# sourceMappingURL=index.css.map */
