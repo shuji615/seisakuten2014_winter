@@ -31,18 +31,21 @@
       width: 270px;
       margin-bottom: 80px; }
   #works .work {
-    width: 160px;
+    height: 270px;
+    width: 220px;
     margin: 0 auto; }
     #works .work .img-clip {
-      width: 160px;
-      height: 160px;
+      width: 220px;
+      height: 220px;
       margin-bottom: 16px;
       overflow: hidden;
-      border-radius: 100px; }
+      border: solid 2px #ddd;
+      border-radius: 10px; }
       #works .work .img-clip img {
         width: auto;
-        height: 160px; }
+        height: 220px; }
     #works .work .work-title p {
+      line-height: 28px;
       font-size: 24px;
       text-align: center;
       color: #ecf0f1; }
@@ -55,6 +58,7 @@
         margin-bottom: 60px; }
     #works .work {
       width: 100px;
+      height: 160px;
       margin: 0 auto; }
       #works .work .img-clip {
         width: 100px;
