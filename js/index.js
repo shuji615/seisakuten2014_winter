@@ -1,5 +1,4 @@
 var sprites;
-var texts;
 var imageClasses = [
   'bigmark-c',
   'bigmark-m',
@@ -24,6 +23,7 @@ var fitToWindow = function() {
     height: size,
     top: (height - size) / 2
   });
+  // moveToHorizontal();
 };
 
 $(window).resize(function(){ fitToWindow(); });
@@ -37,16 +37,6 @@ $.fn.extend({
     }, {
       queue: false,
       duration: 500,
-      easing: 'easeOutElastic'
-    });
-  },
-  keel: function() {
-    this.transition({
-      rotate: '0deg',
-      duration: 0
-    });
-    this.transition({
-      rotate: '360deg',
     });
   },
 });
@@ -61,88 +51,6 @@ var moveToHorizontal = function() {
       scale: 2,
       duration: 0.2
     });
-};
-
-var moveToTriangle = function () {
-  var radius = 0.3;
-  var origin = {x: 0.5, y: 0.55};
-  var a0 = Math.PI / 2 * 3;
-
-  for (var i = 0; i < sprites.length; i++) {
-    var a = a0 + i * Math.PI * 2 / 3;
-    var x = origin.x + radius * Math.cos(a);
-    var y = origin.y + radius * Math.sin(a);
-    sprites[i].moveTo(x, y, 0.2, 0.2);
-  }
-  $('.sprite').transition({
-    scale: 1,
-    duration: 0.2,
-  });
-}
-
-var keel = function () {
-  $('.sprite').keel();
-  if (inverted) {
-    for (var i = 0; i < sprites.length; i++) {
-      var sprite = sprites[i];
-      sprite.removeClass(imageClassesInverted[i]);
-      sprite.addClass(imageClasses[i]);
-    }
-    $('.text .inverted').addClass('hidden');
-    $('.text .default').removeClass('hidden');
-    $('#main').css({
-      backgroundColor: '#ffffff',
-    });
-  } else {
-    for (var i = 0; i < sprites.length; i++) {
-      var sprite = sprites[i];
-      sprite.removeClass(imageClasses[i]);
-      sprite.addClass(imageClassesInverted[i]);
-    }
-    $('.text .inverted').removeClass('hidden');
-    $('.text .default').addClass('hidden');
-    $('#main').css({
-      backgroundColor: '#000000',
-    });
-  }
-  inverted = !inverted;
-};
-
-var showText = function(){
-  for (var i = 0; i < sprites.length; i++) {
-    var sprite = sprites[i];
-    var text = texts[i];
-    var pos = sprite.position();
-    text.css({
-      left: pos.left + sprite.width() / 2 - text.width() / 2,
-      top:  pos.top + sprite.height(),
-    });
-    sprite.animate({
-      top: pos.top - sprite.height() / 4,
-    },{
-      queue: false,
-      duration: 500,
-      easing: 'easeOutElastic'
-    });
-  }
-
-  $('.text').animate({
-    opacity: '1.0',
-  },{
-    queue: false,
-    duration: 500,
-  });
-
-};
-
-var hideText = function(){
-  $('.text').animate({
-    opacity: '0.0',
-  },{
-      queue: false,
-      duration: 200,
-  });
-  moveToTriangle();
 };
 
 var toggle = function(){
@@ -194,21 +102,6 @@ var loop = [
   function(){
     toggle();
   },
-  // function(){
-  //   moveToHorizontal();
-  // },
-  // function(){
-  //   keel();
-  // },
-  // function(){
-  //   moveToTriangle();
-  // },
-  // function(){
-  //   showText();
-  // },
-  // function(){
-  //   hideText();
-  // },
 ];
 
 // main
