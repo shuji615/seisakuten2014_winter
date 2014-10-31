@@ -1,4 +1,4 @@
-var sprites;
+var sprites = null;
 var imageClasses = [
   'bigmark-c',
   'bigmark-m',
@@ -23,17 +23,17 @@ var fitToWindow = function() {
     height: size,
     top: (height - size) / 2
   });
-  // moveToHorizontal();
+  moveToHorizontal();
 };
 
 $(window).resize(function(){ fitToWindow(); });
 
 // jqueryの拡張
 $.fn.extend({
-  moveTo: function(x, y, width, height){
+  moveTo: function(x, y){
     this.animate({
-      left: ((x - width/2)  * 100) + '%',
-      top:  ((y - height/2) * 100) + '%',
+      left: (x  * 100) + '%',
+      top:  (y * 100) + '%',
     }, {
       queue: false,
       duration: 500,
@@ -44,13 +44,10 @@ $.fn.extend({
 // 整列の実装
 
 var moveToHorizontal = function() {
-    sprites[0].moveTo(0.3, 0.5, 0.2, 0.2);
-    sprites[1].moveTo(0.5, 0.5, 0.2, 0.2);
-    sprites[2].moveTo(0.7, 0.5, 0.2, 0.2);
-    $('.sprite').transition({
-      scale: 2,
-      duration: 0.2
-    });
+  if (!sprites) return;
+  sprites[0].moveTo(-0.2, 0.1);
+  sprites[1].moveTo( 0.1, 0.1);
+  sprites[2].moveTo( 0.4, 0.1);
 };
 
 var toggle = function(){
