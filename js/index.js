@@ -117,7 +117,6 @@ var particle = {
         // $('#intro_back').css(
         //     'height', height + margin
         // );
-
     },
 
     init:function(){
@@ -156,9 +155,6 @@ var particle = {
             this.y = Math.ceil(Math.random()*height);
             this.toX = Math.random()*5 - 2.5;
             this.toY = -(Math.random()*5+1);
-            this.r = Math.ceil(Math.random()*255);
-            this.g = Math.ceil(Math.random()*255);
-            this.b = Math.ceil(Math.random()*255);
             this.size = Math.random()*(size - 10) + 10;
             this.width = this.size * 19 / 20;
             this.height = this.size * 26 / 20;
@@ -167,6 +163,16 @@ var particle = {
             this.rotateSpeed = 0.05;
             this.startRotation = Math.random() * Math.PI * 2;
             // this.hidden = true;
+            this.initColor();
+        };
+
+        this.Egg.prototype.initColor = function() {
+          var color_elem = [Math.ceil(Math.random() * 255), 255, 150];
+          color_elem.sort(function(){return Math.random()-.5});
+
+          this.r = color_elem[0];
+          this.g = color_elem[1];
+          this.b = color_elem[2];
         };
 
         this.Egg.prototype.update = function(){
