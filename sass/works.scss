@@ -38,6 +38,7 @@
   }
 
   .work {
+    height: 240px;
     width: 160px;
     margin: 0 auto;
     .img-clip {
@@ -53,6 +54,7 @@
     }
     .work-title {
       p {
+        line-height: 28px;
         font-size: 24px;
         text-align: center;
         color: #ecf0f1;

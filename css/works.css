@@ -31,6 +31,7 @@
       width: 270px;
       margin-bottom: 80px; }
   #works .work {
+    height: 240px;
     width: 160px;
     margin: 0 auto; }
     #works .work .img-clip {
@@ -43,6 +44,7 @@
         width: auto;
         height: 160px; }
     #works .work .work-title p {
+      line-height: 28px;
       font-size: 24px;
       text-align: center;
       color: #ecf0f1; }
