@@ -17,8 +17,7 @@
 
 /* End hide from IE-mac */
 html, body {
-  height: 100%;
-  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  height: 100%; }
 
 a:hover {
   text-decoration: none;
@@ -39,18 +38,17 @@ ul {
   background-color: white; }
   #nav #nav-top-image {
     margin-top: 60px;
-    margin-bottom: 40px;
     margin-left: 14px; }
     #nav #nav-top-image img {
       width: 150px;
       height: auto; }
   #nav #links {
     width: 100%;
-    margin-bottom: 50px; }
+    margin-top: 100px; }
   #nav .link {
-    margin-left: 22px;
+    margin-left: 36px;
     margin-bottom: 10px;
-    width: 134px;
+    width: 108px;
     height: 25px;
     border-bottom: solid 2px; }
     #nav .link a {
@@ -58,16 +56,8 @@ ul {
       height: 100%; }
     #nav .link p {
       color: black;
-      margin-left: 8px;
+      margin-left: 4px;
       font-size: 14px; }
-  #nav #nav-about {
-    position: relative;
-    margin-left: 22px;
-    bottom: 10px; }
-    #nav #nav-about p {
-      color: #555;
-      font-size: 12px;
-      line-height: 15px; }
   #nav .info {
     border-bottom-color: #e74c3c; }
   #nav .greetings {
@@ -128,6 +118,8 @@ ul {
       border-bottom-color: #e67e22; }
     #nav .links {
       border-bottom-color: #9b59b6; }
+    #nav #nav-about {
+      display: none; }
 
   #nav {
     transition: all .4s ease-in-out;
@@ -182,9 +174,6 @@ ul {
       font-size: 40px; }
 
 @media all and (max-width: 719px) {
-  #nav #nav-about {
-    display: none; }
-
   #main {
     position: relative;
     width: 100%;
