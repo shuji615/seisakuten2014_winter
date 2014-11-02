@@ -44,11 +44,12 @@ ul {
       height: auto; }
   #nav #links {
     width: 100%;
-    margin-top: 100px; }
+    margin-top: 80px;
+    margin-bottom: 30px; }
   #nav .link {
-    margin-left: 36px;
+    margin-left: 22px;
     margin-bottom: 10px;
-    width: 108px;
+    width: 132px;
     height: 25px;
     border-bottom: solid 2px; }
     #nav .link a {
@@ -56,8 +57,15 @@ ul {
       height: 100%; }
     #nav .link p {
       color: black;
-      margin-left: 4px;
-      font-size: 14px; }
+      margin-left: -4px;
+      font-size: 14px;
+      text-align: center; }
+  #nav #nav-about {
+    margin-left: 22px; }
+    #nav #nav-about p {
+      color: #555555;
+      font-size: 10px;
+      line-height: 14px; }
   #nav .info {
     border-bottom-color: #e74c3c; }
   #nav .greetings {
