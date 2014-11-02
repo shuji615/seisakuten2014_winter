@@ -23,6 +23,19 @@ body {
   #intro_back canvas {
     position: fixed; }
 
+#smart-about {
+  position: fixed;
+  bottom: 20px;
+  width: 100%; }
+  #smart-about p {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #ddd; }
+  @media all and (min-width: 720px) {
+    #smart-about {
+      display: none; } }
+
 #top {
   position: relative;
   width: 500px;
