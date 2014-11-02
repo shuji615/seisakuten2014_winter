@@ -30,6 +30,7 @@ $yellow: #f1c40f;
 
 html, body {
   height: 100%;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 a:hover {
@@ -54,6 +55,7 @@ ul {
   background-color: white;
   #nav-top-image {
     margin-top: 60px;
+    margin-bottom: 40px;
     margin-left: 14px;
     img {
       width: 150px;
@@ -62,12 +64,12 @@ ul {
   }
   #links {
     width: 100%;
-    margin-top: 100px
+    margin-bottom: 50px;
   }
   .link {
-    margin-left: 36px;
+    margin-left: 22px;
     margin-bottom: 10px;
-    width: 108px;
+    width: 134px;
     height: 25px;
     border-bottom: solid 2px;
     a {
@@ -77,8 +79,18 @@ ul {
     }
     p {
       color: black;
-      margin-left: 4px;
+      margin-left: 8px;
       font-size: 14px;
+    }
+  }
+  #nav-about {
+    position: relative;
+    margin-left: 22px;
+    bottom: 10px;
+    p {
+      color: #555;
+      font-size: 12px;
+      line-height: 15px;
     }
   }
 
@@ -211,6 +223,11 @@ ul {
   }
 }
 @media all and (max-width: 719px) { // smart
+#nav {
+    #nav-about {
+      display: none;
+    }
+}
 #main {
   position: relative;
   width: 100%;
