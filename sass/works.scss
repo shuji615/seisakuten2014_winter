@@ -61,6 +61,14 @@
         color: #ecf0f1;
       }
     }
+    .work-title.small {
+      p {
+        line-height: 28px;
+        font-size: 24px;
+        text-align: center;
+        color: #ecf0f1;
+      }
+    }
   }
 @media all and (max-width: 539px) { // smart
   ul#work-list {
@@ -88,7 +96,14 @@
     }
     .work-title {
       p {
-        font-size: 20px;
+        font-size: 16px;
+        text-align: center;
+        color: #ecf0f1;
+      }
+    }
+    .work-title.small {
+      p {
+        font-size: 14px;
         text-align: center;
         color: #ecf0f1;
       }
