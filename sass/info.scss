@@ -35,6 +35,13 @@ p {
       margin-bottom: 10px;
       font-size: 20px;
     }
+    @media all and (max-width: 520px) { // smart
+      margin: 0 auto 20px;
+      p {
+        text-align: center;
+        font-size: 14px;
+      }
+    }
   }
 
   .place {
@@ -42,6 +49,13 @@ p {
     p {
       margin-bottom: 10px;
       font-size: 20px;
+    }
+    @media all and (max-width: 520px) { // smart
+      margin: 0 auto 20px;
+      p {
+        text-align: center;
+        font-size: 14px;
+      }
     }
   }
 

@@ -27,11 +27,23 @@ p {
     #info .time p {
       margin-bottom: 10px;
       font-size: 20px; }
+    @media all and (max-width: 520px) {
+      #info .time {
+        margin: 0 auto 20px; }
+        #info .time p {
+          text-align: center;
+          font-size: 14px; } }
   #info .place {
     margin: 30px 60px; }
     #info .place p {
       margin-bottom: 10px;
       font-size: 20px; }
+    @media all and (max-width: 520px) {
+      #info .place {
+        margin: 0 auto 20px; }
+        #info .place p {
+          text-align: center;
+          font-size: 14px; } }
   #info .map {
     border-radius: 6px;
     position: relative;
