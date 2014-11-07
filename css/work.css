@@ -9,6 +9,10 @@
   background-image: url(../img/works-background.jpg);
   background-size: cover; }
 
+@media all and (max-width: 540px) {
+  #main > div {
+    padding-top: 100px; } }
+
 #work {
   min-height: 800px;
   background-color: rgba(0, 0, 0, 0.5); }
@@ -16,6 +20,10 @@
     border-bottom-color: #ecf0f1; }
     #work .title p {
       color: #ecf0f1; }
+    @media all and (max-width: 540px) {
+      #work .title p {
+        font-size: 28px;
+        line-height: 34px; } }
   #work #description {
     clear: left; }
     #work #description img {
@@ -25,6 +33,11 @@
       margin-bottom: 30px;
       width: 400px;
       height: auto; }
+      @media all and (max-width: 540px) {
+        #work #description img {
+          margin-bottom: 10px;
+          margin-left: 10%;
+          width: 80%; } }
     #work #description .author {
       margin-top: 30px;
       margin-left: 30px;
@@ -48,5 +61,30 @@
         color: #ecf0f1;
         font-size: 16px;
         line-height: 20px; }
+    @media all and (max-width: 540px) {
+      #work #description .author {
+        margin-top: 30px;
+        margin-left: 10%;
+        margin-bottom: 30px;
+        width: 80%;
+        float: left; }
+        #work #description .author .name {
+          margin-bottom: 10px; }
+          #work #description .author .name p {
+            color: #ecf0f1;
+            font-size: 20px;
+            line-height: 34px; }
+        #work #description .author .affiliation p {
+          color: #ecf0f1;
+          font-size: 16px;
+          line-height: 24px; }
+      #work #description .note {
+        clear: left;
+        margin: 10%;
+        width: 80%; }
+        #work #description .note p {
+          color: #ecf0f1;
+          font-size: 14px;
+          line-height: 20px; } }
 
 /*# sourceMappingURL=work.css.map */
