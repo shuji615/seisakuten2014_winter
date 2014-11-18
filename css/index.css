@@ -23,6 +23,27 @@ body {
   #intro_back canvas {
     position: fixed; }
 
+#main > #finished-message {
+  position: absolute;
+  padding-top: 14px;
+  width: 100%;
+  height: 100px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.5); }
+  @media all and (max-width: 719px) {
+    #main > #finished-message {
+      height: 80px; } }
+  #main > #finished-message p {
+    width: 100%;
+    line-height: 20px;
+    font-size: 16px;
+    text-align: center;
+    color: #ddd; }
+    @media all and (max-width: 719px) {
+      #main > #finished-message p {
+        font-size: 12px;
+        line-height: 16px; } }
+
 #smart-about {
   position: fixed;
   bottom: 20px;
